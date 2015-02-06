@@ -1,12 +1,15 @@
 <div class="sidebar-module about">
   <h4>{{ site.locales[site.default_locale].Aboutme }}</h4>
-  <img title="{{site.author}}" src="{{site.aboutme_photo}}" alt="{{site.author}}"/>
+ <div style='line-height:200%'>
+  <img title="{{site.author}}" src="{{site.aboutme_photo}}" alt="{{site.author}}" ><br>
+  
   <span>{{site.aboutme}}</span>
+</div>  
   <br />
 
   {% if site.ShowContactInfo == "True" %}
 
-  You can contact me via:
+  You can contact us via :<br>
 
   {% if site.email != empty %}
   <a href="mailto:{{site.email}}" title="mailto: {{site.email}}">Email</a> /
@@ -15,7 +18,7 @@
   <a href="https://github.com/{{site.github_username}}" title="GithubID: {{site.github_username}}">Github</a> /
   {% endif %}
   {% if site.twitter_username != empty %}
-  <a href="https://twitter.com/{{site.twitter_username}}" title="TwitterID: {{site.twitter_username}}">Twitter</a>
+  <a href="https://nextree.co.kr">Homepage</a>
   {% endif %}
 
   {% endif %}
